@@ -1,5 +1,13 @@
 $font-size: 1rem;
-$font-family: 'Inter', sans-serif;
-$background-color: #121212;
-$font-color: #dae0e0;
+$name-font-family: 'Cheque-Regular';
+$font-family: 'Montserrat';
+$background-color: #E0FEFF;
+$font-color: #000000;
 $page-width: 650px;
+
+$maxWidth: 1920;
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
