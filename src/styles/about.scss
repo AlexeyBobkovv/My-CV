@@ -82,6 +82,35 @@
       }
     }
   }
+
+  .tree {
+    position: absolute;
+  
+    &_small {
+      position: absolute;
+      width: 121px;
+      height: 327px;
+      left: 328px;
+      bottom: 0;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    &_big {
+      width: 169.5px;
+      height: 465px;
+      left: 509px;
+      bottom: 0;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
 .skill-block {
@@ -90,13 +119,13 @@
   justify-content: space-between;
   padding: 0;
 
-  &__el {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0 23px;
 
+  &__el {
+    padding: 0 23px;
     font-size: 1.5rem;
     line-height: 41px;
+    text-align: left;
+
 
     span {
       padding-left: 5px;
@@ -104,40 +133,6 @@
 
     @media (max-width: 400px) {
       font-size: 5vmin;
-    }
-
-    &::before {
-      content: '';
-      display: flow-root list-item;
-    }
-  }
-}
-
-.tree {
-  position: absolute;
-
-  &_small {
-    position: absolute;
-    width: 121px;
-    height: 327px;
-    left: 328px;
-    bottom: 0;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  &_big {
-    width: 169.5px;
-    height: 465px;
-    left: 509px;
-    bottom: 0;
-
-    img {
-      width: 100%;
-      height: 100%;
     }
   }
 }
