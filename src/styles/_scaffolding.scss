@@ -18,32 +18,34 @@ p {
 }
 
 .container {
-  max-width: 1096px;
+  max-width: 1400px;
   margin: 0 auto;
 
-    & > div {
-      margin-bottom: 20%; 
-    }
-  
-    @media (max-width: 1024px) {
-      max-width: 768px;
-    }
+  @media (max-width: 1024px) {
+    max-width: 96%;
+  }
 }
 
 .h2-name {
-  width: 10%;
+  width: 16%;
   display: flex;
   align-items: center;
   position: sticky;
   top: 1vw;
   height: fit-content;
 
+  @media (max-width: 1024px) {
+    width: fit-content;
+    position: static;
+    margin: 0 auto;
+  }
+
   h2 {
     font-family: Montserrat;
-    font-size: 15vmin; 
+    font-size: 15vmin;
     font-weight: 250;
     line-height: 88%;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
 
@@ -56,20 +58,12 @@ p {
 
     @media (max-width: 1024px) {
       writing-mode: horizontal-tb;
+      letter-spacing: 0.3em;
+      font-size: 18vmin;
     }
 
     @media (min-height: 1070px) {
       font-size: 160.233px;
-    }
-  }
-
-  &_orientation {
-    &_horiz {
-      margin-left: 9%;
-
-      h2 {
-        writing-mode: horizontal-tb;
-      }
     }
   }
 }

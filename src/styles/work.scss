@@ -1,25 +1,32 @@
-.third {
+.work {
+  height: 71rem;
+  padding: 0 2%;
   display: flex;
   position: relative;
   justify-content: space-between;
+  margin-bottom: 20%;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
+    height: 90rem;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 640px) {
+      height: 70rem;
+    }
   }
 
   &__block {
     width: 85%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
     font-family: Montserrat;
-    @include adaptiv-font(28, 12);
+    font-size: 1.75;
     text-align: center;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1024px) {
       width: 100%;
       line-height: 1.6em;
       height: 90%;
@@ -28,7 +35,6 @@
 
   &__list-of-works {
     width: 100%;
-    height: 95%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -37,11 +43,15 @@
     justify-content: center;
     align-items: start;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1024px) {
       height: 100%;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 30% 50% 20%;
       row-gap: 2%;
+    }
+
+    @media (max-width: 640px) {
+      grid-template-rows: repeat(3, 1fr);
     }
   }
 }
@@ -53,14 +63,21 @@
   flex-direction: column;
   justify-content: space-around;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     border: 1px solid #111;
+    width: 99%;
+    height: 100%;
+    padding: 1%;
   }
 
   &__name {
     text-transform: uppercase;
-    @include adaptiv-font(34, 18);
+    font-size: 2.1rem;
     font-weight: 500;
+
+    @media (max-width: 1024px) {
+      font-size: 1.7rem;
+    }
 
     @media (max-width: 640px) {
       span {
@@ -70,7 +87,7 @@
   }
 
   &__text {
-    @include adaptiv-font(22, 14);
+    font-size: 1.37rem;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 399;
@@ -82,7 +99,7 @@
   }
 
   &__link {
-    @include adaptiv-font(36, 18);
+    font-size: 2.1rem;
     font-style: normal;
     font-weight: 250;
     text-align: center;
@@ -90,52 +107,24 @@
   }
 
   &_position {
-    &_first-try {
-      width: 90%;
-      height: 60%;
-
-      @media (max-width: 1000px) {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
     &_momentum {
-      width: 90%;
-      height: 40%;
       align-self: end;
 
-      @media (max-width: 1000px) {
-        width: 100%;
-        height: 100%;
+      @media (max-width: 1024px) {
         align-self: start;
       }
     }
 
     &_15-game {
-      width: 82%;
-      height: 50%;
-
-      @media (max-width: 1000px) {
-        width: 100%;
-        height: 100%;
+      @media (max-width: 1024px) {
       }
     }
 
     &_un-club {
-      width: 100%;
-      height: 100%;
       text-align: center;
-
-      @media (max-width: 1000px) {
-        width: 100%;
-        height: 100%;
-      }
     }
 
     &_text {
-      width: 82%;
-      height: 50%;
       align-self: center;
 
       .work-block__name {
@@ -148,7 +137,7 @@
         }
       }
 
-      @media (max-width: 1000px) {
+      @media (max-width: 1024px) {
         width: 100%;
         height: 100%;
         align-self: start;
@@ -159,7 +148,7 @@
       width: 88%;
       height: 45%;
 
-      @media (max-width: 1000px) {
+      @media (max-width: 1024px) {
         width: 100%;
         height: 100%;
       }
