@@ -1,0 +1,140 @@
+.contact {
+  display: flex;
+  width: 100%;
+  height: 60rem;  
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  &__name-block {
+    width: 10%;
+    
+    &_visibility {
+      &_phone {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      display: flex;
+      width: 100%;
+      position: relative;
+      justify-content: center;
+
+    }
+
+    @media (max-width: 1000px) {
+      &_visibility {
+        &_comp {
+          display: none;
+        }
+
+        &_phone {
+          display: flex;
+          font-size: 12vmin;
+        }
+      }
+    }
+  }
+
+  &__block {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media (max-width: 1000px) {
+      height: 500px;
+    }
+  }
+
+  &__list-block {
+    width: 55%;
+    height: 69%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 8%;
+
+    @media (max-width: 1000px) {
+      margin-top: 4%;
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.contact-el {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  @media (max-width: 1000px) {
+    width: 53%;
+  height: 13%;
+  }
+
+  &__name {
+    width: 11%;
+height: 60%;
+    position: relative;
+    border: 19px solid rgba(73, 162, 166, 0.2);
+
+    p {
+      font-weight: 250;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      @include adaptiv-font(74, 16);
+      letter-spacing: 10px;
+    }
+
+    &_pos {
+      &_vk {
+        P {
+          left: -14%;
+          top: -6%;
+        }
+      }
+
+      &_tg {
+        P {
+          left: -10%;
+          top: -12%;
+        }
+      }
+
+      &_ph {
+        P {
+          left: -20%;
+          top: -12%;
+        }
+      }
+
+      &_em {
+        P {
+          left: -25%;
+          top: -12%;
+        }
+      }
+    }
+  }
+
+  &__info {
+    width: 70%;
+    display: flex;
+    align-items: center;
+
+    font-weight: 250;
+
+P {
+  width:fit-content;
+  @include adaptiv-font(40, 14);
+}
+  }
+}
