@@ -237,13 +237,15 @@
 
     font-weight: 250;
 
-    P {
+
+    &-el {
       width: fit-content;
       font-size: 2rem;
+      color:#000
     }
 
     @media (max-width: 1024px) {
-      p {
+      &-el {
         font-size: 5.2vmin;
       }
     }
