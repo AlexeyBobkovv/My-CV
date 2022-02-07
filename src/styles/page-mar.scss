@@ -1,0 +1,38 @@
+.page-margins {
+  height: 20rem;
+  position: relative;
+
+  &_pos {
+    &_about {
+      .tree_small {
+        bottom: -14%;
+        left: 222px;
+        height: 191%;
+        width: 196px;
+      }
+
+      .tree_big {
+        bottom: -14%;
+        left: 450px;
+        height: 267%;
+        width: 250px;
+      }
+    }
+
+    &_work {
+      .tree_small {
+        bottom: 0%;
+        left: 24%;
+        height: 191%;
+        width: 196px;
+      }
+
+      .tree_big {
+        bottom: 0%;
+        left: 65%;
+        height: 267%;
+        width: 250px;
+      }
+    }
+  }
+}
