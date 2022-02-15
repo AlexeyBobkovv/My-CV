@@ -91,6 +91,10 @@
     font-weight: 300;
     font-size: 30px;
 
+    a{
+      color: black;
+    }
+
     @media (max-width: 680px) {
       font-size: 4vmin;
     }
