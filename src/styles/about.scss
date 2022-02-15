@@ -1,105 +1,25 @@
 .about {
-  height: 64rem;
-  padding: 0 2%;
-  display: flex;
-  position: relative;
+  background-color: $dark-background-color;
 
-  @media (max-width: 400px) {
-    height: 75rem;
-  }
-
-  @media (max-width: 1024px) {
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  &__page-info {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-
-    @media (max-width: 1024px) {
-      width: 100%;
-      height: 85%;
-      align-items: center;
-    }
-  }
-
-  &__text-block {
-    width: 90%;
-    height: 50%;
-    display: grid;
-    grid-template: 1fr / 45% 35%;
-    column-gap: 20%;
-
-    font-size: 1.3rem;
+  &__text {
+    width: 725px;
+    height: 60%;
+    margin: 0 auto;
+    font-weight: 300;
+    @include adaptiv-font(24, 17);
+    line-height: 1.5;
     text-align: center;
 
-    @media (max-width: 1024px) {
-      width: 90%;
-      height: 70%;
-      font-size: 1rem;
-      line-height: 1.6em;
+    padding-bottom: 3%;
 
-      grid-template: 1fr / 50% 40%;
-      column-gap: 10%;
+    @media (min-width: 1920px) {
+      font-size: 24px;
     }
 
-    @media (max-width: 400px) {
-      height: 90%;
-      font-size: 0.7rem;
-    }
+    @media (max-width: 780px) {
+      width: 80%;
 
-    &_size {
-      &_left {
-        height: 91%;
-      }
-
-      &_right {
-        height: fit-content;
-        align-self: end;
-      }
-    }
-  }
-
-  &__block-skills {
-    width: 660px;
-    height: 32%;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.3rem;
-
-    @media (max-width: 768px) {
-      width: 100%;
-
-      span {
-        display: none;
-      }
-    }
-  }
-}
-
-.skill-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0;
-
-  &__el {
-    padding: 0 23px;
-    font-size: 1.5rem;
-    line-height: 41px;
-    text-align: left;
-
-    span {
-      padding-left: 5px;
-    }
-
-    @media (max-width: 400px) {
-      font-size: 5vmin;
+      padding-bottom: 10%;
     }
   }
 }

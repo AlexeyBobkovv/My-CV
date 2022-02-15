@@ -1,0 +1,14 @@
+.education {
+  height: 100%;
+  background-color: $light-background-color;
+  padding-bottom: 2%;
+
+  &__info {
+    width: 515px;
+    margin: 2% auto;
+
+    @media (max-width: 550px) {
+      width: 90%;
+    }
+  }
+}

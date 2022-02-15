@@ -1,0 +1,27 @@
+.info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+
+  padding: 1%;
+
+  border: 1px solid black;
+
+  &__wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__date {
+    margin-bottom: 3%;
+  }
+
+  &__comment {
+    padding: 19px 0;
+  }
+
+  &__link {
+  }
+}

@@ -1,16 +1,174 @@
 .greet {
-  display: -webkit-flex;
+  height: 36rem;
+  background-color: $light-background-color;
   display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  margin-bottom: 20%;
-
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 
-  .img {
-    width: 100%;
+  &__upper-block {
+    width: 90%;
+    height: 85.383%;
+    display: flex;
+  }
+
+  &__text {
+    width: 70%;
     height: 100%;
+  }
+
+  &__name-block {
+    height: 75%;
+    width: 93%;
+    position: relative;
+
+    font-family: Cheque;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 170px;
+    line-height: 204px;
+
+    @media (max-width: 1220px) {
+      font-size: 15vmin;
+    }
+  }
+
+  &__name {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__surname {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @media (max-width: 1220px) {
+      right: unset;
+      left: 0;
+    }
+  }
+
+  &__birth {
+    height: 20%;
+    width: 43%;
+
+    font-family: Cheque;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6vmin;
+    line-height: 86px;
+  }
+
+  &__avatar {
+    width: 30%;
+    height: 74%;
+    @include flex-center;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  &__running-text {
+    max-width: 100%;
+    height: 150px;
+    display: block;
+
+    font-size: 44px;
+    line-height: 151px;
+    overflow: hidden;
+
+    p {
+      padding-left: 7%;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 1920 * 2 * 1px;
+    animation: marquee-infinite 5s linear infinite;
+
+    @keyframes marquee-infinite {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__element {
+    display: flex;
+    white-space: nowrap;
+    width: 1920px;
+  }
+
+  &__front {
+    &-1 {
+      font-family: Halant;
+    }
+
+    &-2 {
+      font-family: Montserrat;
+      font-weight: 275;
+    }
+
+    &-3 {
+      font-family: Lexend Peta;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .greet {
+    &__upper-block {
+      height: 95%;
+      flex-direction: column;
+    }
+
+    &__name-block {
+      width: 100%;
+      height: 74%;
+    }
+
+    &__text {
+      width: 100%;
+      height: 70%;
+    }
+
+    &__name {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &__surname {
+      position: absolute;
+      left: unset;
+      right: 0;
+      bottom: -42px;
+    }
+
+    &__birth {
+      font-size: 9vmin;
+    }
+
+    &__avatar {
+      width: 100%;
+      height: 30%;
+      @include flex-center;
+
+      img {
+        width: unset;
+        height: 100%;
+      }
+    }
+
+    &__running-text {
+      height: 21%;
+    }
   }
 }

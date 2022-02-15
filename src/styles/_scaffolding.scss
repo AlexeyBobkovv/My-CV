@@ -1,7 +1,6 @@
 html {
   font-size: $font-size;
   font-family: $font-family;
-  background: $background-color;
   color: $font-color;
   line-height: 1.4;
 }
@@ -18,60 +17,29 @@ p {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
 
   @media (max-width: 1024px) {
-    max-width: 96%;
+    max-width: 100%;
   }
 }
 
-.tree {
-  position: absolute;
+.page-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 96px;
+  text-transform: uppercase;
+  text-align: center;
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
+  padding: 3vh 0;
 
-.h2-name {
-  width: 16%;
-  display: flex;
-  align-items: center;
-  position: sticky;
-  top: 1vw;
-  height: fit-content;
+  color: #000000;
 
-  @media (max-width: 1024px) {
-    width: fit-content;
-    position: static;
-    margin: 0 auto;
-  }
+  text-shadow: 9px 4px 4px rgba(0, 0, 0, 0.38);
 
-  h2 {
-    font-size: 15vmin;
-    font-weight: 250;
-    line-height: 88%;
-    letter-spacing: 0.1em;
-    text-align: center;
-    text-transform: uppercase;
-
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-
-    text-shadow: 9px 4px 4px rgba(0, 0, 0, 0.38);
-
-    margin: 0 auto;
-
-    @media (max-width: 1024px) {
-      writing-mode: horizontal-tb;
-      letter-spacing: 0.3em;
-      font-size: 18vmin;
-    }
-
-    @media (min-height: 1070px) and (orientation: landscape) {
-      font-size: 160.233px;
-    }
+  @media (max-width: 1200px) {
+    font-size: 10vw;
   }
 }

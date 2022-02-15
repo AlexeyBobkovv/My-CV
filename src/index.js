@@ -1,14 +1,11 @@
 // Test import of a JavaScript module
-import { example } from '@/js/example'
+import './js/slider'
 
-import tree from './images/tree.png'
-const htmlEl = document.querySelectorAll('.tree')
-
-htmlEl.forEach((el) => {
-  let treeEl = document.createElement('img')
-  treeEl.src = tree
-  el.append(treeEl)
-})
+import avatar from './images/avatar.png'
+const htmlEl = document.querySelector('.greet__avatar')
+let avatarEl = document.createElement('img')
+avatarEl.src = avatar
+htmlEl.append(avatarEl)
 
 // Test import of styles
 import '@/styles/index.scss'

@@ -1,10 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant&family=Lexend+Peta&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap');
 
 $font-size: 1rem;
-$name-font-family: 'Cheque-Regular';
+$name-font-family: 'Cheque-Black';
 $font-family: 'Montserrat', sans-serif;
-$background-color: #e0feff;
+
+$light-background-color: #e0feff;
+$dark-background-color: rgba(71, 158, 162, 0.7);
 $font-color: #000000;
+
 $page-width: 650px;
 
 $maxWidth: 1920;
+
+@function pxToRem($px) {
+  @return calc($px / 16 * 1rem);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
