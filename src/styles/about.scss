@@ -2,10 +2,10 @@
   background-color: $dark-background-color;
 
   &__text {
-    width: 725px;
+    width: 765px;
     height: 60%;
     margin: 0 auto;
-    font-weight: 300;
+    font-weight: 400;
     @include adaptiv-font(24, 17);
     line-height: 1.5;
     text-align: center;

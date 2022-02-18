@@ -2,10 +2,10 @@
   background-color: $dark-background-color;
 
   &__text-block {
-    width: 886px;
+    width: 900px;
     margin: 0 auto 0 auto;
     padding-bottom: 2%;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 42px;
 
     line-height: 143px;
@@ -14,7 +14,7 @@
 
     span {
       text-decoration-line: underline;
-      margin: 0 10px;
+      margin: 0 17px;
 
       text-decoration: none;
       background-position: 0% 100%;
@@ -35,72 +35,75 @@
     }
 
     .html {
-        background-image: linear-gradient(#FF8C00, #FFA500);
-        animation: iliketomoveit1 8s infinite;
-        animation-delay: 2.2s;
+      background-image: linear-gradient(#ff8c00, #ffa500);
+      animation: iliketomoveit1 8s infinite;
+      animation-delay: 2.2s;
     }
 
     .css {
-      background-image: linear-gradient(#00BFFF, #1E90FF);
+      background-image: linear-gradient(#00bfff, #1e90ff);
       animation: iliketomoveit1 8s infinite;
       animation-delay: 1s;
     }
 
     .scss {
-      background-image: linear-gradient(#DDA0DD	, #DA70D6);
+      background-image: linear-gradient(#dda0dd, #da70d6);
       animation: iliketomoveit1 8s infinite;
       animation-delay: 3.78s;
     }
 
     .bem {
-      background-image: linear-gradient(#D3D3D3, #A9A9A9);
+      background-image: linear-gradient(#d3d3d3, #a9a9a9);
       animation: iliketomoveit1 8s infinite;
       animation-delay: 9.5s;
     }
 
     .js {
-      background-image: linear-gradient(#FFFF00, #FFD700);
+      background-image: linear-gradient(#ffff00, #ffd700);
       animation: iliketomoveit1 8s infinite;
       animation-delay: 6.5s;
     }
 
     .ts {
-      background-image: linear-gradient(#6495ED, #00008B);
+      background-image: linear-gradient(#6495ed, #00008b);
       animation: iliketomoveit1 8s infinite;
       animation-delay: 7s;
     }
 
     .git {
-      background-image: linear-gradient(#FF4500, #FF4500);
+      background-image: linear-gradient(#ff4500, #ff4500);
       animation: iliketomoveit1 8s infinite;
       animation-delay: 10s;
     }
 
     .react {
-      background-image: linear-gradient(#00BFFF, #00BFFF);
+      background-image: linear-gradient(#00bfff, #00bfff);
       animation: iliketomoveit1 8s infinite;
       animation-delay: 8s;
     }
 
     .wp {
-      background-image: linear-gradient(#4682B4, #4682B4);
+      background-image: linear-gradient(#4682b4, #4682b4);
       animation: iliketomoveit1 8s infinite;
       animation-delay: 13s;
     }
 
     .eng {
-      background-image: linear-gradient(#00BFFF, #FF0000);
+      background-image: linear-gradient(#00bfff, #ff0000);
       animation: iliketomoveit1 8s infinite;
       animation-delay: 15.44s;
     }
   }
 }
 
-@keyframes iliketomoveit1 { 
-  40% 	 {background-size: 0% 2px;} 
-  50%  {background-size: 100% 2px;} 
-	60%  {background-size: 0% 2px;} 
+@keyframes iliketomoveit1 {
+  40% {
+    background-size: 0% 2px;
+  }
+  50% {
+    background-size: 100% 2px;
+  }
+  60% {
+    background-size: 0% 2px;
+  }
 }
-
-
-

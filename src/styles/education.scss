@@ -1,14 +1,59 @@
 .education {
   height: 100%;
   background-color: $light-background-color;
-  padding-bottom: 2%;
+  padding-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__info-wrapper {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+    grid-template-areas:
+      'A B'
+      'C C';
+
+    .A {
+      grid-area: A;
+    }
+
+    .B {
+      grid-area: B;
+    }
+
+    .C {
+      width: 65%;
+      grid-area: C;
+
+      @media (max-width: 1080px) {
+        width: 450px;
+      }
+
+      @media (max-width: 550px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 1080px) {
+      width: 90%;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'A'
+        'B'
+        'C';
+    }
+  }
 
   &__info {
-    width: 515px;
+    width: 450px;
     margin: 2% auto;
 
     @media (max-width: 550px) {
-      width: 90%;
+      width: 100%;
     }
   }
 }
