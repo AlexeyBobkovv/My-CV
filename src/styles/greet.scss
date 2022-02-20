@@ -7,17 +7,20 @@
   align-items: center;
 
   &__upper-block {
-    width: 90%;
+    width: 85%;
     height: 85.383%;
     display: flex;
+    justify-content: center;
   }
 
   &__text {
     width: 56%;
     height: 100%;
+    margin-left: 4%;
 
     @media (max-width: 1220px) {
       width: 69%;
+      margin-left: 0;
     }
   }
 
